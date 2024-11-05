@@ -1,6 +1,5 @@
 import re
 import requests
-from bs4 import BeautifulSoup
 import itertools
 
 article_pattern = r'<li[^>]*>.*<a[^>]*href=\"(/wiki/(?![^"]*:)[^"]+)\"[^>]*title=\"([^"]+)\"[^>]*>.*</li>'
