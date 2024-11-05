@@ -58,7 +58,7 @@ def main():
     category_input = input("Enter the category name: ").strip()
     articles = fetch_category_articles(category_input)
     for path in articles:
-        article_html_content = fetch_article_html(path)
+        article_html_content = fetch_article_html(path[0])
         
         internal_links = find_internal_links(article_html_content)
         join_results([link_title for _, link_title in internal_links])
